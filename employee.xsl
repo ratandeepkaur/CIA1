@@ -9,27 +9,37 @@
 <th>Employee Id</th>
 <th>Employee Name</th>
 <th>Employee Age</th>
-<th>Employee </th>
-<th>Check In Date</th>
-<th>No of Days</th>
-<th>Outstanding Days</th>
-<th>Extra</th>
-<th>Charges</th>
-<th>Status</th>
+<th>Employee Salary</th>
+<th>Employee Designation</th>
+<th>Employee Email</th>
+<th>Employee Phone</th>
+<th>Employee Designation</th>
+<th>Employee Promotion</th>
 </tr>
 <xsl:for-each select="employee">
 <tr>
-<td><xsl:value-of select="issuer_name"/></td>
-<td><xsl:value-of select="book_title"/></td>
-<td><xsl:value-of select="check_out_date"/></td>
-<td><xsl:value-of select="due_date"/></td>
-<td><xsl:value-of select="check_in_date"/></td>
-<td><xsl:value-of select="no_of_days"/></td>
-<td><xsl:value-of select="outstanding_days"/></td>
-<td><xsl:value-of select="extra"/></td>
-<td><xsl:value-of select="charges"/></td>
-<td><xsl:value-of select="status"/></td>
+<td><xsl:value-of select="id"/></td>
+<td><xsl:value-of select="name"/></td>
+<td><xsl:value-of select="age"/></td>
+<td><xsl:value-of select="salary"/></td>
+<td><xsl:value-of select="designation"/></td>
+<td><xsl:value-of select="email"/></td>
+<td><xsl:value-of select="phone"/></td>
+<td><xsl:value-of select="designation"/></td>
+<td><xsl:if "age" &gt;=50>
+  Associate Project Manager
+</xsl:if>>
+</td>
+<td><xsl:if "age" &gt;=40 and "age" &lt;=49>
+  Team Leader
+</xsl:if>>
+</td>
+<td><xsl:if "age" &lt;=40>
+ Developer
+</xsl:if>>
+</td>
 </tr>
+
 </xsl:for-each >
 </table>
 </body>

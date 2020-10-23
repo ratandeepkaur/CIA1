@@ -25,4 +25,20 @@
 <tns:phone>8908904545</tns:phone>
 <tns:designation>Developer</tns:designation>
 </tns:Employee>
+<tns:Employee fid="idvalue2">
+<tns:name>Aman</tns:name>
+<tns:age>50</tns:age>
+<tns:salary>150000</tns:salary>
+<tns:email>aman@gmail.com</tns:email>
+<tns:phone>8908904453</tns:phone>
+<tns:designation>Team Leader</tns:designation>
+</tns:Employee>
+<tns:Employee fid="idvalue2">
+<tns:name>Chirag</tns:name>
+<tns:age>40</tns:age>
+<tns:salary>96000</tns:salary>
+<tns:email>chirag@gmail.com</tns:email>
+<tns:phone>8908909087</tns:phone>
+<tns:designation>Developer</tns:designation>
+</tns:Employee>
 </tns:globalEmployee>
